@@ -12,6 +12,15 @@ export const NavItems = [
         href: '/international'
     },
     {
+        title: 'US',
+        href: '/us'
+    },
+    
+    {
+        title: 'Football',
+        href: '/football'
+    },
+    {
         title: 'Wordle',
         href: '/wordle'
     },
