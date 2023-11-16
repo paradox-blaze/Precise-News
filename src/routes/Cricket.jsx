@@ -4,7 +4,7 @@ import NewsGrid from '../components/NewsGrid';
 const Cricket = () => {
     return (
         <>
-            <NewsGrid type={'cricket'} />
+            <NewsGrid apitype={'top-headlines?country=in&category=sports&q=cricket'}/>
         </>
     )
 }

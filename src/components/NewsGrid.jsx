@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { ImSpinner9 } from 'react-icons/im';
 
-const NewsGrid = ({ type }) => {
+const NewsGrid = ({ apitype }) => {
     const [data, setData] = useState([]);
     const [fetched, setFetched] = useState(false);
     const [loading, setLoading] = useState(true);
     const fetchData = async () => {
         try {
             if (!fetched) {
-                const response = await fetch(`https://newsapi.org/v2/everything?q=${type}&apiKey=8f7f4723e41f484ab5f6689a5612a472`);
+                const response = await fetch(`https://newsapi.org/v2/${apitype}&apiKey=8f7f4723e41f484ab5f6689a5612a472`);
                 const jsonData = await response.json();
                 setData(jsonData.articles);
                 setFetched(true);

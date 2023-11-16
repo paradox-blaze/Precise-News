@@ -4,7 +4,7 @@ import NewsGrid from '../components/NewsGrid';
 const International = () => {
     return (
         <>
-            <NewsGrid type={'international'} />
+            <NewsGrid apitype={'top-headlines?country=us&category=technology'} />
         </>
     )
 }
