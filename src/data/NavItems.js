@@ -20,8 +20,5 @@ export const NavItems = [
         title: 'Sports',
         href: '/sports'
     },
-    {
-        title: 'Wordle',
-        href: '/wordle'
-    },
+   
 ]

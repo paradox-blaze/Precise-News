@@ -5,7 +5,6 @@ import './index.css'
 import Navbar from './components/Navbar.jsx'
 import Cricket from './routes/Cricket.jsx'
 import International from './routes/international.jsx'
-import Wordle from './routes/Wordle.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import US from './routes/Us.jsx'
 import Sports from './routes/sports.jsx'
@@ -21,7 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/international' element={<International />} />
         <Route path='/us' element={<US />} />
         <Route path='/sports' element={<Sports />} />
-        <Route path='/wordle' element={<Wordle />} />
       </Routes>
     </div>
   </BrowserRouter>
