@@ -8,7 +8,7 @@ import International from './routes/international.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import US from './routes/Us.jsx'
 import Sports from './routes/sports.jsx'
-
+import Weather from './routes/Weather.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -20,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/international' element={<International />} />
         <Route path='/us' element={<US />} />
         <Route path='/sports' element={<Sports />} />
+        <Route path='/weather' element={<Weather />} />
       </Routes>
     </div>
   </BrowserRouter>
