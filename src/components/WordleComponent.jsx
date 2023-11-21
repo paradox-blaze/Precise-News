@@ -223,7 +223,7 @@ const WordleComponent = () => {
                 <div className="loss">Sorry..<br />You couldn't guess the word..</div>
             </div>
 
-            <div className="container text-black dark:text-white">
+            <div className="max-w-[100%] container text-black dark:text-white">
                 <div className="row-1">
                     <div className="box box1" tabIndex="0"></div>
                     <div className="box box2" tabIndex="1"></div>
