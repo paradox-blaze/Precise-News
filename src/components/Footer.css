@@ -8,6 +8,11 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid #606c76;
+    box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
   
   .copyright {
@@ -20,4 +25,14 @@
     font-feature-settings: normal;
     font-variation-settings: normal;
   }
-  
+
+.footer-container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
