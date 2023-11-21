@@ -8,7 +8,7 @@ import International from './routes/International.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import US from './routes/US.jsx'
 import Sports from './routes/Sports.jsx'
-import Weather from './routes/Weather.jsx'
+import Footer from './components/Footer.jsx'
 import Wordle from './routes/Wordle.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -23,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/sports' element={<Sports />} />
         <Route path='/wordle' element={<Wordle />} />
       </Routes>
+      <Footer />
     </div>
   </BrowserRouter>
 )
