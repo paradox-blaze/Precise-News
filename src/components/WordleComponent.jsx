@@ -12,7 +12,7 @@ const WordleComponent = () => {
         var gameEnded = false;
 
         async function selectWordByDate() {
-            const response = await fetch('//127.0.0.1:7256/getWordOfDay');
+            const response = await fetch('//localhost:7256/getWordOfDay');
             return (await response.json()).word;
         }
 
@@ -43,7 +43,7 @@ const WordleComponent = () => {
         let wordSet;
 
         async function fetchAllWords() {
-            const allWordsFromDB = await (await fetch('//127.0.0.1:7256/getAllWords')).json() // Fetch all words from the database
+            const allWordsFromDB = await (await fetch('//localhost:7256/getAllWords')).json() // Fetch all words from the database
             const allWordsUpperCase = allWordsFromDB.map(entry => entry.word.toUpperCase());
             wordSet = new Set(allWordsUpperCase);
         }
