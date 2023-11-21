@@ -10,7 +10,7 @@ const Footer = () => {
       <p className="copyright">&copy; Precise News {currentYear}</p>
       <p className="footer-item">Aditya HR PES1UG22AM013</p>
       <p className="footer-item">Aneesh Upadhya PES1UG22AM022</p>
-      <p className="footer-item">Adit Acharya PES1UG22AM020</p>
+      <p className="footer-item">Adit Acharya PES1UG22AM009</p>
     </footer>
   );
 };
