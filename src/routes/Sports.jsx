@@ -3,7 +3,7 @@ import NewsGrid from '../components/NewsGrid'
 const Sports = () => {
   return (
     <>
-       <NewsGrid apitype={'top-headlines?country=us&category=sports'} />
+       <NewsGrid apitype={'top-headlines?country=in&category=sports'} />
     </>
   )
 }

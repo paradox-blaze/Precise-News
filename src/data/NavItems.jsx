@@ -15,12 +15,12 @@ export const NavItems = [
         href: '/'
     },
     {
-        title: 'Cricket',
-        href: '/cricket'
+        title: 'Business',
+        href: '/business'
     },
     {
-        title: 'International',
-        href: '/international'
+        title: 'Technology',
+        href: '/technology'
     },
     {
         title: 'US',

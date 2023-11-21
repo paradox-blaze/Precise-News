@@ -1,7 +1,7 @@
 import React from 'react';
 import NewsGrid from '../components/NewsGrid';
 
-const International = () => {
+const Technology = () => {
     return (
         <>
             <NewsGrid apitype={'top-headlines?country=us&category=technology'} />
@@ -9,4 +9,4 @@ const International = () => {
     )
 }
 
-export default International
+export default Technology
