@@ -215,7 +215,7 @@ const WordleComponent = () => {
     };
 
     return (
-        <div className='py-20'>
+        <div className='py-20 h-[100vh]'>
             <h1 className=' text-black dark:text-white wordleTitle'>Wordle</h1>
             <div className="messageContainer">
                 <div className="wrongWord">Word not in the list!!</div>
