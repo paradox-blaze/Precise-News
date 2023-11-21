@@ -33,7 +33,7 @@ const NewsGrid = ({ apitype }) => {
                         </div>
                     </>
                 ) : (
-                    <div className='grid grid-cols-3 gap-y-6 gap-x-4 mx-6 pt-20 pb-8 z-0'>
+                    <div className='bg-white dark:bg-black grid grid-cols-3 gap-y-6 gap-x-4 mx-6 pt-20 pb-8 z-0'>
                         {
                             data
                                 .filter(data => data.urlToImage)
@@ -43,7 +43,7 @@ const NewsGrid = ({ apitype }) => {
                                             <div className='flex justify-center items-center w-full'>
                                                 <img src={item.urlToImage} alt="Image" className='h-[10rem] w-[15rem]' />
                                             </div>
-                                            <h1 className='max-w-xl clear-left text-xl font-bold'>{item.title}</h1>
+                                            <h1 className='font-sans max-w-xl clear-left text-xl font-bold'>{item.title}</h1>
                                             <div>
                                                 <p>{item.description}</p>
                                             </div>

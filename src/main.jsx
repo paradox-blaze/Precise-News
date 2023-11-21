@@ -9,10 +9,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import US from './routes/Us.jsx'
 import Sports from './routes/sports.jsx'
 import Weather from './routes/Weather.jsx'
+import Wordle from './routes/Wordle.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <div className='  dark:bg-black'>
+    <div className='bg-white dark:bg-black'>
       <Navbar />
       <Routes>
         <Route path='/' element={<App />} />
@@ -20,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/international' element={<International />} />
         <Route path='/us' element={<US />} />
         <Route path='/sports' element={<Sports />} />
-        <Route path='/weather' element={<Weather />} />
+        <Route path='/wordle' element={<Wordle />} />
       </Routes>
     </div>
   </BrowserRouter>

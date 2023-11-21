@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Young+Serif&display=swap');
+
+link[rel="icon"] {
+    transform: scale(2);
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.victory {
+
+    display: none;
+    padding: 1rem;
+    z-index: 2;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-color: #121213;
+    width: 25rem;
+    border: 1px solid #3a3a3c;
+
+    animation: slideDown 0.3s ease forwards paused;
+    position: absolute;
+
+}
+
+.white-text {
+    color: white;
+}
+
+.wrongWord {
+    display: none;
+    padding: 1rem;
+    z-index: 2;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-color: #121213;
+    width: 25rem;
+    border: 1px solid #3a3a3c;
+
+    animation: slideDown 0.3s ease forwards paused;
+    position: absolute;
+}
+
+.loss {
+    display: none;
+    padding: 1rem;
+    z-index: 2;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-color: #121213;
+    width: 25rem;
+    border: 1px solid #3a3a3c;
+    animation: slideDown 0.3s ease forwards paused;
+    position: absolute;
+
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.flip {
+    transform: rotateX(360deg);
+    transition: 0.5s ease-in;
+}
+
+
+
+hr {
+    color: #3a3a3c;
+}
+
+.wordleTitle {
+    font-family: 'Young Serif', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.box {
+    font-family: 'Young Serif', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    border: 2px solid #3a3a3c;
+    height: 3rem;
+    width: 3rem;
+    margin: 2.5px;
+}
+
+.firstline {
+    margin-top: 10px;
+}
+
+
+.firstline,
+.secondline,
+.thirdline {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #818384;
+    border: none;
+    border-radius: 10%;
+    height: 4rem;
+    width: 2.8rem;
+    margin: 3px;
+}
+
+#enter,
+#back {
+    width: 4rem;
+    font-size: 15px;
+}
