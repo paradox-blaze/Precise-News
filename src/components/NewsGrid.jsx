@@ -40,6 +40,7 @@ const NewsGrid = ({ apitype }) => {
                                 .map((item, key) => (
                                     <>
                                         <div className='flex flex-col bg-gray-300 dark:bg-gray-700 text-black dark:text-white p-4 rounded-xl space-y-4 hover:scale-105 duration-300' key={key}>
+                                        <a href={`${item.url}`} target="_blank">
                                             <div className='flex justify-center items-center w-full'>
                                                 <img src={item.urlToImage} alt="Image" className='h-[10rem] w-[15rem]' />
                                             </div>
@@ -48,6 +49,7 @@ const NewsGrid = ({ apitype }) => {
                                                 <p>{item.description}</p>
                                             </div>
                                             <a href={`${item.url}`} target="_blank" className='text-blue-600'>Read More...</a>
+                                        </a>
                                         </div>
                                     </>
                                 ))
